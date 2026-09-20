@@ -1,0 +1,82 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Kart Racer 3D</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game">
+
+        <div id="hud">
+
+            <div class="hud-box">
+                <span class="hud-label">LAP</span>
+                <span id="lapDisplay">1 / 3</span>
+            </div>
+
+            <div class="hud-box">
+                <span class="hud-label">TIME</span>
+                <span id="timeDisplay">00:00.000</span>
+            </div>
+
+            <div class="hud-box">
+                <span class="hud-label">BEST LAP</span>
+                <span id="bestLapDisplay">--:--.---</span>
+            </div>
+
+            <div class="hud-box">
+                <span class="hud-label">SPEED</span>
+                <span id="speedDisplay">0</span>
+            </div>
+
+        </div>
+
+        <div id="countdown">3</div>
+
+        <div id="finishScreen">
+
+            <h1>RACE COMPLETE!</h1>
+
+            <div class="result-row">
+                <span>TOTAL TIME</span>
+                <span id="finalTime">00:00.000</span>
+            </div>
+
+            <div class="result-row">
+                <span>BEST LAP</span>
+                <span id="finalBestLap">--:--.---</span>
+            </div>
+
+            <button id="restartButton">
+                RACE AGAIN
+            </button>
+
+        </div>
+
+        <div id="controls">
+            <div><b>W / ↑</b> Accelerate</div>
+            <div><b>S / ↓</b> Brake / Reverse</div>
+            <div><b>A / ←</b> Steer Left</div>
+            <div><b>D / →</b> Steer Right</div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+    </div>
+
+    <script type="module" src="game.js"></script>
+
+</body>
+</html>
+```
